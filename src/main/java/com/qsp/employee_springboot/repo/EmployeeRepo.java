@@ -11,11 +11,10 @@ public interface EmployeeRepo extends JpaRepository<Employee, Integer> {
 	Employee findByPhone(long phone);
 
 	Employee findByEmail(String email);
-	
+
 	List<Employee> findByName(String name);
-	
+
 	List<Employee> findByAddress(String address);
-//	Optional<Employee> findByE(String email);
 
 	List<Employee> findBySalaryLessThan(double salary);
 
@@ -25,21 +24,4 @@ public interface EmployeeRepo extends JpaRepository<Employee, Integer> {
 
 	List<Employee> findByDesignation(String designation);
 
-	
-
-
-
-//	  Employee findByPhone(long phone);
-//
-//	    String deleteByPhone(long phone);
-//
-//	    String deleteByEmail(String email);
-
-//	    List<Employee> getByEmail(String email);
-//
-//	    @Query("SELECT e FROM Employee e WHERE e.address = ?1")
-//	    List<Employee> employeeByAddress(String address);
-//
-//	    @Query("SELECT e FROM Employee e WHERE e.name = ?1")
-//	    List<Employee> employeeByName(String name);
 }
